@@ -1,2 +1,2 @@
 #!/bin/bash
-cat $PYFILE= "C is fun!" | python3.11
+python3 $PYFILE
