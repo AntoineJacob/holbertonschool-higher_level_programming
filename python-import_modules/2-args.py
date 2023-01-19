@@ -14,7 +14,7 @@ def main(argv):
         for i, x in enumerate(argv[1:], 1):
             print("{:d}: {}".format(i, x))
 
+
 if __name__ == "__main__":
     import sys
     main(sys.argv)
-    
