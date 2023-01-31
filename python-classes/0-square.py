@@ -3,6 +3,7 @@
 This is the square size def
 """
 
+
 class Square:
     """
     The Square class with the size attribute
