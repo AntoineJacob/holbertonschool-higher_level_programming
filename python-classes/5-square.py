@@ -49,7 +49,7 @@ class Square:
         Returns area of the square instance
         """
         return (self.__size ** 2)
-    
+
     def my_print(self):
         """
         prints to the stdout square with # or empty line if 0
