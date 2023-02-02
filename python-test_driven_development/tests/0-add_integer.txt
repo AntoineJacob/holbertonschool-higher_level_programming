@@ -42,4 +42,3 @@ TypeError: a must be an integer
 >>> add_integer(98, float('nan'))
 Traceback (most recent call last):
 TypeError: b must be an integer
-a
