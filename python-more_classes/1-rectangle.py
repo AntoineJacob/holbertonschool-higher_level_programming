@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Rectangle module
-
+This module defines a class - Rectangle
 """
 
 
@@ -23,7 +22,7 @@ class Rectangle:
     @property
     def width(self):
         """
-        function to return width if setter checks have passedr
+        function to return width if setter checks have passed
         """
         return self.__width
 
@@ -35,11 +34,11 @@ class Rectangle:
         TypeError
         ValueError
         """
-        if width is not int:
-            raise TypeError('width must be an integer')
-        elif width < 0:
-            raise ValueError('width must be >= 0')
-        return self.__width = value
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
@@ -56,8 +55,8 @@ class Rectangle:
         TypeError
         ValueError
         """
-        if height is not int:
-            raise TypeError('height must be an integer')
-        elif height < 0:
-            raise ValueError('height must be >= 0')
-        return self.__height = value
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
