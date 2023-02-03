@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module defines a class - Rectangle
+Rectangle module
+
 """
 
 
@@ -26,7 +27,7 @@ class Rectangle:
         """
         return self.__width
 
-    @property.setter
+    @width.setter
     def width(self, value):
         """
         setter validates if value is >= 0
@@ -47,7 +48,7 @@ class Rectangle:
         """
         return self.__height
 
-    @property.setter
+    @height.setter
     def height(self, value):
         """
         setter validates if value is >= 0
