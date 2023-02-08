@@ -10,5 +10,5 @@ class Mylist(list):
     """
     The Mylist class that inherits from list
     """
-def print_sorted(self):
+    def print_sorted(self):
     print(sorted(self))
