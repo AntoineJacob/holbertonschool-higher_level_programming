@@ -5,6 +5,7 @@ True if the obj is exactly an instance of the
 specified class else False
 """
 
+
 def is_same_class(obj, a_class):
     """
     Function that check for an object in a specified class
