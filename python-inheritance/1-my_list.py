@@ -6,9 +6,9 @@ prints the list in ascending order
 """
 
 
-class Mylist(list):
+class MyList(list):
     """
-    The Mylist class that inherits from list
+    class that inherits from list
     """
     def print_sorted(self):
-    print(sorted(self))
+        print(sorted(self))
