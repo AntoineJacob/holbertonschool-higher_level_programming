@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import json
 """
-This file contains a function
+This module contains a function
 that returns the JSON representation
 of an object
 """
