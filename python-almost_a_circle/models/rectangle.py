@@ -32,7 +32,7 @@ class Rectangle(Base):
     def width(self, value):
         """
         setter validates value is an integer > 0
-        receives value as param
+        receives value as parameter
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -51,7 +51,7 @@ class Rectangle(Base):
     def height(self, value):
         """
         setter validates value is an integer > 0
-        receives value as param
+        receives value as parameter
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -70,7 +70,7 @@ class Rectangle(Base):
     def x(self, value):
         """
         setter validates value is an integer > 0
-        receives value as param
+        receives value as parameter
         """
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -89,7 +89,7 @@ class Rectangle(Base):
     def y(self, value):
         """
         setter validates value is an integer > 0
-        receives value as param
+        receives value as parameter
         """
         if type(value) is not int:
             raise TypeError("y must be an integer")
