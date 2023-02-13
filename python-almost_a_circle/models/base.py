@@ -10,7 +10,7 @@ class Base:
     the whole project
     """
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         """
         Our init method
