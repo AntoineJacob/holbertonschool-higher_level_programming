@@ -32,17 +32,17 @@ def width(self):
 
 @width.setter
 def width(self, value):
-        """width: width of the rectangle
-        setter validating width is int and >= 0
-        Raise:
-             TypeError and ValueError
-        """
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
-        elif value < 0:
-            raise ValueError("width must be >= 0")
-        else:
-            self.__width = value
+    """width: width of the rectangle
+    setter validating width is int and >= 0
+    Raise:
+        TypeError and ValueError
+    """
+    if type(value) is not int:
+        raise TypeError("width must be an integer")
+    elif value < 0:
+        raise ValueError("width must be >= 0")
+    else:
+        self.__width = value
 
 
 @property
@@ -55,17 +55,17 @@ def height(self):
 
 @height.setter
 def height(self, value):
-        """height: height of the rectangle
-        setter validating height is int and >= 0
-        Raise:
-             TypeError and ValueError
-        """
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
-        elif value < 0:
+    """height: height of the rectangle
+    setter validating height is int and >= 0
+    Raise:
+        TypeError and ValueError
+    """
+    if type(value) is not int:
+        raise TypeError("height must be an integer")
+    elif value < 0:
             raise ValueError("heigh tmust be >= 0")
-        else:
-            self.__height = value
+    else:
+        self.__height = value
 
 
 @property
@@ -78,17 +78,17 @@ def x(self):
 
 @x.setter
 def x(self, value):
-        """x: x of the rectangle
-        setter validating x is int and >= 0
-        Raise:
-             TypeError and ValueError
-        """
-        if type(value) is not int:
-            raise TypeError("x must be an integer")
-        elif value < 0:
-            raise ValueError("x tmust be >= 0")
-        else:
-            self.__x = value
+    """x: x of the rectangle
+    setter validating x is int and >= 0
+    Raise:
+         TypeError and ValueError
+    """
+    if type(value) is not int:
+        raise TypeError("x must be an integer")
+    elif value < 0:
+        raise ValueError("x tmust be >= 0")
+    else:
+        self.__x = value
 
 
 @property
@@ -101,14 +101,14 @@ def y(self):
 
 @y.setter
 def y(self, value):
-        """y: y of the rectangle
-        setter validating y is int and >= 0
-        Raise:
-             TypeError and ValueError
-        """
-        if type(value) is not int:
-            raise TypeError("y must be an integer")
-        elif value < 0:
-            raise ValueError("y must be >= 0")
-        else:
-            self.__y = value
+    """y: y of the rectangle
+    setter validating y is int and >= 0
+    Raise:
+         TypeError and ValueError
+    """
+    if type(value) is not int:
+        raise TypeError("y must be an integer")
+    elif value < 0:
+                raise ValueError("y must be >= 0")
+    else:
+        self.__y = value
