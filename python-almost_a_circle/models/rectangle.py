@@ -106,7 +106,7 @@ class Rectangle(Base):
     def display(self):
         """
         Prints in stdout the Rectangle
-        instance with the character #
+        instance with the character # with x and y
         """
         print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
                                              ("#" * self.__width))
