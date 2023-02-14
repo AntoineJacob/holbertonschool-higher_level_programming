@@ -4,6 +4,7 @@ In this module, there is the base class
 """
 import json
 
+
 class Base:
     """
     The class base, who gonna be our model for
