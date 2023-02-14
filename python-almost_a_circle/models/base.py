@@ -6,7 +6,6 @@ import json
 import csv
 
 
-
 class Base:
     """
     The class base, who gonna be our model for
