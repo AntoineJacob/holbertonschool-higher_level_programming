@@ -74,7 +74,7 @@ class Rectangle(Base):
         """
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        if value < 0:
+        if value <= 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -93,7 +93,7 @@ class Rectangle(Base):
         """
         if type(value) is not int:
             raise TypeError("y must be an integer")
-        if value < 0:
+        if value <= 0:
             raise ValueError("y must be >= 0")
         self.__y = value
 
@@ -111,3 +111,7 @@ class Rectangle(Base):
         print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
                                              ("#" * self.__width))
                                             for a in range(self.__height)))
+    def __str__(self):
+        return ("[Rectangle] ({}) {:d}/{:d} - {:d}/{:d}".
+                format(self.id, self.__x, self.__y, self.__width,
+                       self.__height))
