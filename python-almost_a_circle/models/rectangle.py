@@ -111,7 +111,7 @@ class Rectangle(Base):
         print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
                                              ("#" * self.__width))
                                             for a in range(self.__height)))
-                                            
+
     def __str__(self):
         return ("[Rectangle] ({}) {:d}/{:d} - {:d}/{:d}".
                 format(self.id, self.__x, self.__y, self.__width,
