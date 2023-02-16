@@ -4,6 +4,7 @@ This module contain all the test for the
 square class
 """
 import unittest
+import sys
 from models.base import Base
 from models.square import Square
 
@@ -12,6 +13,21 @@ class Test_Square(unittest.TestCase):
     """
     The class who contain all of our tests
     """
+
+    def setUpClass(cls):
+        """set up the tests"""
+        Base._Base__nb_objects = 0
+        cls.s1 = Square(1)
+        cls.s2 = Square(2, 3)
+        cls.s3 = Square(4, 5, 6)
+        cls.s4 = Square(7, 8, 9, 10)
+
+    def test_id(self):
+        """Test for functioning ID"""
+        self.assertEqual(self.s1.id, 1)
+        self.assertEqual(self.s2.id, 2)
+        self.assertEqual(self.s3.id, 3)
+        self.assertEqual(self.s4.id, 10)
 
     def test_size(self):
         """
@@ -65,3 +81,5 @@ class Test_Square(unittest.TestCase):
         with self.assertRaises(TypeError):
             s = Square()
 
+if __name__ == '__main__':
+    unittest.main()
