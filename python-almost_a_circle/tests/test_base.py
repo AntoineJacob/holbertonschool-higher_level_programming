@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ unittests for Base """
-
 import os
 import unittest
 from models.base import Base
