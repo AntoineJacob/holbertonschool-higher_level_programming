@@ -4,4 +4,4 @@ let i;
 
 for (i = 0; i < languages.length; i++) {
   console.log(languages[i]);
-}
+};
